@@ -123,7 +123,7 @@ main(int argc, char *argv[])
 	fflagstdin = 0;
 	inplace = NULL;
 
-	while ((c = getopt(argc, argv, "EI:ae:f:i:lnru")) != -1)
+	while ((c = getopt(argc, argv, "+EI:ae:f:i:lnru")) != -1)
 		switch (c) {
 		case 'r':		/* Gnu sed compat */
 		case 'E':
