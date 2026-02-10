@@ -76,7 +76,7 @@ main(int argc, char **argv)
 	decimal_point = localeconv()->decimal_point[0];
 
 	aflag = hflag = pflag = 0;
-	while ((ch = getopt(argc, argv, "aho:p")) != -1)
+	while ((ch = getopt(argc, argv, "+aho:p")) != -1)
 		switch((char)ch) {
 		case 'a':
 			aflag = 1;
