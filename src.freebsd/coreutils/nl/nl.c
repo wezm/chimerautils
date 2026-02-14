@@ -361,7 +361,7 @@ static void
 parse_numbering(const char *argstr, int section)
 {
 	int error;
-	char errorbuf[NL_TEXTMAX];
+	char errorbuf[2048];
 
 	switch (argstr[0]) {
 	case 'a':
