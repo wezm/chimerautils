@@ -80,7 +80,7 @@ main(int argc, char *argv[])
 	int ch, rval;
 	const char *target;
 
-	while ((ch = getopt(argc, argv, "Tfhint:vx")) != -1)
+	while ((ch = getopt(argc, argv, "+Tfhint:vx")) != -1)
 		switch (ch) {
 		case 'h':
 			hflg = 1;

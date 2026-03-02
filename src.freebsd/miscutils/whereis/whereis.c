@@ -105,7 +105,7 @@ scanopts(int argc, char **argv)
 	int c, i;
 	ccharp **dirlist;
 
-	while ((c = getopt(argc, argv, "BMSabfmqsux")) != -1)
+	while ((c = getopt(argc, argv, "+BMSabfmqsux")) != -1)
 		switch (c) {
 		case 'B':
 			dirlist = &bindirs;

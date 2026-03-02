@@ -43,7 +43,7 @@ main(int argc, char *argv[])
 	char *t;
 
 	sflag = 0;
-	while ((ch = getopt(argc, argv, "s")) != -1)
+	while ((ch = getopt(argc, argv, "+s")) != -1)
 		switch (ch) {
 		case 's':
 			sflag = 1;

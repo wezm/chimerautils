@@ -119,7 +119,7 @@ main(int argc, char *argv[])
 	if (val == NULL)
 		errx(1, "can't initialise bignum");
 
-	while ((ch = getopt(argc, argv, "h")) != -1)
+	while ((ch = getopt(argc, argv, "+h")) != -1)
 		switch (ch) {
 		case 'h':
 			hflag++;

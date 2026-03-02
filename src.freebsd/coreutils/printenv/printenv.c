@@ -57,7 +57,7 @@ main(int argc, char *argv[])
 	if (caph_limit_stdio() < 0 || caph_enter() < 0)
 		err(1, "capsicum");
 
-	while ((ch = getopt(argc, argv, "")) != -1)
+	while ((ch = getopt(argc, argv, "+")) != -1)
 		switch(ch) {
 		case '?':
 		default:

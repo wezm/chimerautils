@@ -60,7 +60,7 @@ main(int argc, char *argv[])
 {
 	int exit_status;
 
-	while (getopt(argc, argv, "") != -1)
+	while (getopt(argc, argv, "+") != -1)
 		usage();
 	argc -= optind;
 	argv += optind;

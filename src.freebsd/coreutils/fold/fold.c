@@ -62,7 +62,7 @@ main(int argc, char **argv)
 
 	width = -1;
 	previous_ch = 0;
-	while ((ch = getopt(argc, argv, "0123456789bsw:")) != -1) {
+	while ((ch = getopt(argc, argv, "+0123456789bsw:")) != -1) {
 		switch (ch) {
 		case 'b':
 			bflag = 1;

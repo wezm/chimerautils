@@ -108,7 +108,7 @@ main(int argc, char *argv[])
 	user = group = grouplist = NULL;
 	gidlist = NULL;
 	nonprivileged = false;
-	while ((ch = getopt(argc, argv, "G:g:u:n")) != -1) {
+	while ((ch = getopt(argc, argv, "+G:g:u:n")) != -1) {
 		switch(ch) {
 		case 'u':
 			user = optarg;

@@ -76,7 +76,7 @@ main(int argc, char **argv)
 		err(1, "unable to enter capability mode");
 
 	Cflag = cflag = dflag = sflag = 0;
-	while ((optc = getopt(argc, argv, "Ccdsu")) != -1)
+	while ((optc = getopt(argc, argv, "+Ccdsu")) != -1)
 		switch(optc) {
 		case 'C':
 			Cflag = 1;

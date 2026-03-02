@@ -108,7 +108,7 @@ main(int argc, char *argv[])
 	argc -= argptr - argv;
 	argv = argptr;
 #else
-	while ((ch = getopt(argc, argv, "")) != -1)
+	while ((ch = getopt(argc, argv, "+")) != -1)
 		switch (ch) {
 		case '?':
 		default:

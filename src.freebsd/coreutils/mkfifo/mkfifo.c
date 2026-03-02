@@ -55,7 +55,7 @@ main(int argc, char *argv[])
 	mode_t fifomode;
 	int ch, exitval;
 
-	while ((ch = getopt(argc, argv, "m:")) != -1)
+	while ((ch = getopt(argc, argv, "+m:")) != -1)
 		switch(ch) {
 		case 'm':
 			f_mode = 1;

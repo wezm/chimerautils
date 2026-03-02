@@ -102,7 +102,7 @@ editor(GS *gp, int argc, char *argv[])
 #ifdef DEBUG
 	while ((ch = getopt(argc, argv, "c:D:eFlRrSsT:t:vw:")) != EOF)
 #else
-	while ((ch = getopt(argc, argv, "c:eFlRrSst:vw:")) != EOF)
+	while ((ch = getopt(argc, argv, "+c:eFlRrSst:vw:")) != EOF)
 #endif
 		switch (ch) {
 		case 'c':		/* Run the command. */

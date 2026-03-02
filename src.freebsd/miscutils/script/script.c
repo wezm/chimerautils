@@ -132,7 +132,7 @@ main(int argc, char *argv[])
 	sigemptyset(&selmask);
 	pselmask = NULL;
 
-	while ((ch = getopt(argc, argv, "adeFkpqrT:t:w")) != -1)
+	while ((ch = getopt(argc, argv, "+adeFkpqrT:t:w")) != -1)
 		switch (ch) {
 		case 'a':
 			aflg = 1;

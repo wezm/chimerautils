@@ -93,7 +93,7 @@ main_decode(int argc, char *argv[])
 	if (strcmp(basename(argv[0]), "b64decode") == 0)
 		base64 = true;
 
-	while ((ch = getopt(argc, argv, "cimo:prs")) != -1) {
+	while ((ch = getopt(argc, argv, "+cimo:prs")) != -1) {
 		switch (ch) {
 		case 'c':
 			if (oflag || rflag)

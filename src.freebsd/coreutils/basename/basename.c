@@ -59,7 +59,7 @@ main(int argc, char **argv)
 	suffix = NULL;
 	suffixlen = 0;
 
-	while ((ch = getopt(argc, argv, "as:")) != -1)
+	while ((ch = getopt(argc, argv, "+as:")) != -1)
 		switch(ch) {
 		case 'a':
 			aflag = 1;

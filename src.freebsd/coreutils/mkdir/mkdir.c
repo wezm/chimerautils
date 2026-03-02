@@ -56,7 +56,7 @@ main(int argc, char *argv[])
 
 	omode = pflag = 0;
 	mode = NULL;
-	while ((ch = getopt(argc, argv, "m:pv")) != -1)
+	while ((ch = getopt(argc, argv, "+m:pv")) != -1)
 		switch(ch) {
 		case 'm':
 			mode = optarg;

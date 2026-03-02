@@ -102,7 +102,7 @@ main(int argc, char *argv[])
 	pristr = NULL;
 	logflags = 0;
 	unsetenv("TZ");
-	while ((ch = getopt(argc, argv, "46Af:H:h:iP:p:S:st:")) != -1)
+	while ((ch = getopt(argc, argv, "+46Af:H:h:iP:p:S:st:")) != -1)
 		switch((char)ch) {
 		case '4':
 			family = PF_INET;

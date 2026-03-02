@@ -232,13 +232,13 @@ main(int argc, char *argv[])
 
 	if (strcmp(getprogname(), "readlink") == 0) {
 		am_readlink = 1;
-		options = "fn";
+		options = "+fn";
 		synopsis = "[-fn] [file ...]";
 		statfmt = "%Y";
 		fmtchar = 'f';
 		quiet = 1;
 	} else {
-		options = "Ff:hLlnqrst:x";
+		options = "+Ff:hLlnqrst:x";
 		synopsis = "[-FHhLnq] [-f format | -l | -r | -s | -x] "
 		    "[-t timefmt] [file|handle ...]";
 	}

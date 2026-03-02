@@ -152,7 +152,7 @@ main(int argc, char *argv[])
 #define IPSECOPT
 #endif
 	while ((ch = getopt(argc, argv,
-			    "468B:EKLNQS:X:acde:fFk:l:n:rs:uxy" IPSECOPT)) != -1)
+			    "+468B:EKLNQS:X:acde:fFk:l:n:rs:uxy" IPSECOPT)) != -1)
 #undef IPSECOPT
 	{
 		switch(ch) {

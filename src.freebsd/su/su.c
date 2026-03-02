@@ -168,7 +168,7 @@ main(int argc, char *argv[])
 	asme = asthem = statusp = 0;
 	user = "root";
 
-	while ((ch = getopt(argc, argv, "lm")) != -1)
+	while ((ch = getopt(argc, argv, "+lm")) != -1)
 		switch ((char)ch) {
 		case 'l':
 			asme = 0;

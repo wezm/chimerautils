@@ -96,7 +96,7 @@ main(volatile int argc, char ** volatile argv)
 
 	red = (n = strlen(argv[0])) > 2 && argv[0][n - 3] == 'r';
 top:
-	while ((c = getopt(argc, argv, "p:sx")) != -1)
+	while ((c = getopt(argc, argv, "+p:sx")) != -1)
 		switch(c) {
 		case 'p':				/* set prompt */
 			prompt = optarg;

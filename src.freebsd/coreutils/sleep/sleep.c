@@ -97,7 +97,7 @@ main(int argc, char *argv[])
 	if (caph_limit_stdio() < 0 || caph_enter() < 0)
 		err(1, "capsicum");
 
-	while (getopt(argc, argv, "") != -1)
+	while (getopt(argc, argv, "+") != -1)
 		usage();
 	argc -= optind;
 	argv += optind;

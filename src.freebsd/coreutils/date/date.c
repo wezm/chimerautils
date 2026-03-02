@@ -101,7 +101,7 @@ main(int argc, char *argv[])
 	Iflag = jflag = Rflag = 0;
 	ts.tv_sec = 0;
 	ts.tv_nsec = 0;
-	while ((ch = getopt(argc, argv, "f:I::jnRr:uv:z:")) != -1)
+	while ((ch = getopt(argc, argv, "+f:I::jnRr:uv:z:")) != -1)
 		switch((char)ch) {
 		case 'f':
 			fmt = optarg;

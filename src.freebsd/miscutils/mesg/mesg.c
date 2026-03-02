@@ -53,7 +53,7 @@ main(int argc, char *argv[])
 	char *tty;
 	int ch;
 
-	while ((ch = getopt(argc, argv, "")) != -1)
+	while ((ch = getopt(argc, argv, "+")) != -1)
 		switch (ch) {
 		case '?':
 		default:

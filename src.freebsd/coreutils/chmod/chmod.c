@@ -69,7 +69,7 @@ main(int argc, char *argv[])
 
 	set = NULL;
 	Hflag = Lflag = Rflag = fflag = hflag = vflag = 0;
-	while ((ch = getopt(argc, argv, "LPRXfgorstuvwx")) != -1)
+	while ((ch = getopt(argc, argv, "+LPRXfgorstuvwx")) != -1)
 		switch (ch) {
 		case 'H':
 			Hflag = 1;

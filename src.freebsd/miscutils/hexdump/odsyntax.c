@@ -68,7 +68,7 @@ oldsyntax(int argc, char ***argvp)
 
 	odmode = 1;
 	argv = *argvp;
-	while ((ch = getopt(argc, argv, "A:aBbcDdeFfHhIij:LlN:Oost:vXx")) != -1)
+	while ((ch = getopt(argc, argv, "+A:aBbcDdeFfHhIij:LlN:Oost:vXx")) != -1)
 		switch (ch) {
 		case 'A':
 			switch (*optarg) {

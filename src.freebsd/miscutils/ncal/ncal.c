@@ -259,7 +259,7 @@ main(int argc, char *argv[])
 
 	before = after = -1;
 
-	while ((ch = getopt(argc, argv, "3A:B:Cd:eH:hjJm:Nops:wyM")) != -1)
+	while ((ch = getopt(argc, argv, "+3A:B:Cd:eH:hjJm:Nops:wyM")) != -1)
 		switch (ch) {
 		case '3':
 			flag_3months = 1;

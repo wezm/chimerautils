@@ -62,7 +62,7 @@ main(int argc, char *argv[])
 
 	nstops = 1;
 	tabstops[0] = 8;
-	while ((ch = getopt(argc, argv, "at:")) != -1) {
+	while ((ch = getopt(argc, argv, "+at:")) != -1) {
 		switch (ch) {
 		case 'a':	/* Un-expand all spaces, not just leading. */
 			all = 1;

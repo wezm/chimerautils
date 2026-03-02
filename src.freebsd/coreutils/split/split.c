@@ -85,7 +85,7 @@ main(int argc, char **argv)
 	setlocale(LC_ALL, "");
 
 	dflag = false;
-	while ((ch = getopt(argc, argv, "0::1::2::3::4::5::6::7::8::9::a:b:cdl:n:p:")) != -1)
+	while ((ch = getopt(argc, argv, "+0::1::2::3::4::5::6::7::8::9::a:b:cdl:n:p:")) != -1)
 		switch (ch) {
 		case '0': case '1': case '2': case '3': case '4':
 		case '5': case '6': case '7': case '8': case '9':

@@ -127,7 +127,7 @@ main(int argc, char **argv)
 	if (caph_enter() < 0)
 		err(1, "cap_enter");
 
-	while (getopt(argc, argv, "") != -1)
+	while (getopt(argc, argv, "+") != -1)
 		usage();
 	argc -= optind;
 	argv += optind;

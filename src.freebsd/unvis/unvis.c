@@ -56,7 +56,7 @@ main(int argc, char *argv[])
 	FILE *fp;
 	int ch, eflags = 0;
 
-	while ((ch = getopt(argc, argv, "eHhm")) != -1)
+	while ((ch = getopt(argc, argv, "+eHhm")) != -1)
 		switch((char)ch) {
 		case 'e':
 			eflags |= VIS_NOESCAPE;

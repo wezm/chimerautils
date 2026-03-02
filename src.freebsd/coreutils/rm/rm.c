@@ -97,7 +97,7 @@ main(int argc, char *argv[])
 	}
 
 	rflag = xflag = 0;
-	while ((ch = getopt(argc, argv, "dfiIPRrvx")) != -1)
+	while ((ch = getopt(argc, argv, "+dfiIPRrvx")) != -1)
 		switch(ch) {
 		case 'd':
 			dflag = 1;

@@ -283,7 +283,7 @@ main(int argc, char *argv[])
 
 	/* 1. Grok parameters. */
 
-	while ((ch = getopt(argc, argv, "0123456789cd:hl:mnpst:w:")) != -1)
+	while ((ch = getopt(argc, argv, "+0123456789cd:hl:mnpst:w:")) != -1)
 		switch (ch) {
 		case 'c':
 			centerP = 1;

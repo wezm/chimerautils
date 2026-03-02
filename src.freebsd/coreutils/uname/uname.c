@@ -86,7 +86,7 @@ main(int argc, char *argv[])
 	setup_get();
 	flags = 0;
 
-	while ((ch = getopt(argc, argv, "abiKmnoprsUv")) != -1)
+	while ((ch = getopt(argc, argv, "+abiKmnoprsUv")) != -1)
 		switch(ch) {
 		case 'a':
 			flags |= (MFLAG | NFLAG | RFLAG | SFLAG | VFLAG);

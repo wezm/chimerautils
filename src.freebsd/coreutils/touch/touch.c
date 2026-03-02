@@ -67,7 +67,7 @@ main(int argc, char *argv[])
 	ts[0].tv_sec = ts[1].tv_sec = 0;
 	ts[0].tv_nsec = ts[1].tv_nsec = UTIME_NOW;
 
-	while ((ch = getopt(argc, argv, "A:acd:fhmr:t:")) != -1)
+	while ((ch = getopt(argc, argv, "+A:acd:fhmr:t:")) != -1)
 		switch(ch) {
 		case 'A':
 			Aflag = timeoffset(optarg);

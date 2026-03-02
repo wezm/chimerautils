@@ -96,7 +96,7 @@ main(int argc, char *argv[])
 	if (argc < 0)
 		exit(EXIT_FAILURE);
 
-	while ((ch = getopt(argc, argv, "clmwL")) != -1)
+	while ((ch = getopt(argc, argv, "+clmwL")) != -1)
 		switch((char)ch) {
 		case 'l':
 			doline = true;

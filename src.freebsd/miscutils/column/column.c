@@ -82,7 +82,7 @@ main(int argc, char **argv)
 		termwidth = win.ws_col;
 
 	tflag = xflag = 0;
-	while ((ch = getopt(argc, argv, "c:l:s:tx")) != -1)
+	while ((ch = getopt(argc, argv, "+c:l:s:tx")) != -1)
 		switch(ch) {
 		case 'c':
 			termwidth = strtonum(optarg, 0, INT_MAX, &errstr);

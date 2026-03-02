@@ -66,7 +66,7 @@ main(int argc, char *argv[])
 	setlocale(LC_CTYPE, "");
 
 	seq = 0;
-	while ((ch = getopt(argc, argv, "d:s")) != -1)
+	while ((ch = getopt(argc, argv, "+d:s")) != -1)
 		switch(ch) {
 		case 'd':
 			arg = optarg;

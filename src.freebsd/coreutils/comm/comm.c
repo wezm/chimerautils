@@ -68,7 +68,7 @@ main(int argc, char *argv[])
 
 	flag1 = flag2 = flag3 = 1;
 
-	while ((ch = getopt(argc, argv, "123i")) != -1)
+	while ((ch = getopt(argc, argv, "+123i")) != -1)
 		switch(ch) {
 		case '1':
 			flag1 = 0;

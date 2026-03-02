@@ -48,7 +48,7 @@ main(int argc, char *argv[])
 	int ch, qflag, rval;
 
 	qflag = 0;
-	while ((ch = getopt(argc, argv, "q")) != -1) {
+	while ((ch = getopt(argc, argv, "+q")) != -1) {
 		switch (ch) {
 		case 'q':
 			qflag = 1;

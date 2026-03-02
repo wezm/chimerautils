@@ -51,7 +51,7 @@ main(int argc, char *argv[])
 	char *p;
 
 	physical = 1;
-	while ((ch = getopt(argc, argv, "LP")) != -1)
+	while ((ch = getopt(argc, argv, "+LP")) != -1)
 		switch (ch) {
 		case 'L':
 			physical = 0;

@@ -1609,7 +1609,7 @@ setup(int argc, char *argv[])
 		}
 	} else
 		err = stderr;
-	while ((c = egetopt(argc, argv, "#adFfmrte?h:i?L:l:n?o:ps?w:")) != -1) {
+	while ((c = egetopt(argc, argv, "+#adFfmrte?h:i?L:l:n?o:ps?w:")) != -1) {
 		switch (c) {
 		case '+':
 			if ((pgnm = atoi(eoptarg)) < 1) {

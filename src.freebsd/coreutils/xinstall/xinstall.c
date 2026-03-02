@@ -162,7 +162,7 @@ static int
 do_getopt(int argc, char **argv)
 {
 	if (!gnumode)
-		return getopt(argc, argv, "B:bCcD:dg:h:l:M:m:o:pSsT:Uv");
+		return getopt(argc, argv, "+B:bCcD:dg:h:l:M:m:o:pSsT:Uv");
 	/* use getopt_long to get argument interposition */
 	return getopt_long(argc, argv, "B:bCcDdg:l:m:o:pSst:Tv", NULL, NULL);
 }

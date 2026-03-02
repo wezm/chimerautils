@@ -98,7 +98,7 @@ main(int argc, char *argv[])
 
 	setlocale(LC_ALL, "");
 
-	while ((ch = getopt(argc, argv, "")) != -1)
+	while ((ch = getopt(argc, argv, "+")) != -1)
 		switch(ch) {
 		case '?':
 		default:

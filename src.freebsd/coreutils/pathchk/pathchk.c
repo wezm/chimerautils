@@ -58,7 +58,7 @@ main(int argc, char *argv[])
 	int ch, rval;
 	const char *arg;
 
-	while ((ch = getopt(argc, argv, "pP")) > 0) {
+	while ((ch = getopt(argc, argv, "+pP")) > 0) {
 		switch (ch) {
 		case 'p':
 			pflag = 1;

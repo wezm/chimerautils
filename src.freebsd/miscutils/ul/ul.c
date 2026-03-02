@@ -104,7 +104,7 @@ main(int argc, char **argv)
 	termtype = getenv("TERM");
 	if (termtype == NULL || (argv[0][0] == 'c' && !isatty(1)))
 		termtype = "lpr";
-	while ((c = getopt(argc, argv, "it:T:")) != -1)
+	while ((c = getopt(argc, argv, "+it:T:")) != -1)
 		switch (c) {
 		case 't':
 		case 'T': /* for nroff compatibility */

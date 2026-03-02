@@ -50,7 +50,7 @@ main(int argc, char **argv)
 
 	status = EXIT_SUCCESS;
 
-	while ((opt = getopt(argc, argv, "as")) != -1) {
+	while ((opt = getopt(argc, argv, "+as")) != -1) {
 		switch (opt) {
 		case 'a':
 			allpaths = 1;
@@ -141,4 +141,3 @@ print_matches(char *path, char *filename)
 	}
 	return (found ? 0 : -1);
 }
-

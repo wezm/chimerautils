@@ -80,7 +80,7 @@ main(int argc, char **argv)
 	ischown = (strcmp(basename(argv[0]), "chown") == 0);
 
 	Hflag = Lflag = Rflag = fflag = hflag = vflag = xflag = 0;
-	while ((ch = getopt(argc, argv, "HLPRfhvx")) != -1)
+	while ((ch = getopt(argc, argv, "+HLPRfhvx")) != -1)
 		switch (ch) {
 		case 'H':
 			Hflag = 1;

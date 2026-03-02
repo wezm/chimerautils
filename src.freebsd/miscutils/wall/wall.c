@@ -97,7 +97,7 @@ main(int argc, char *argv[])
 
 	(void)setlocale(LC_CTYPE, "");
 
-	while ((ch = getopt(argc, argv, "g:n")) != -1)
+	while ((ch = getopt(argc, argv, "+g:n")) != -1)
 		switch (ch) {
 		case 'n':
 			/* undoc option for shutdown: suppress banner */

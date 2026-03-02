@@ -183,7 +183,7 @@ main(int argc, char *argv[])
 	BUF bufs[2];
 
 	fp = NULL;
-	while ((ch = getopt(argc, argv, "dlq")) != -1)
+	while ((ch = getopt(argc, argv, "+dlq")) != -1)
 		switch (ch) {
 		case 'd':
 			debug = 1;

@@ -161,9 +161,9 @@ main(int argc, char **argv)
 #define DEPRECATEDMSG	1
 
 #ifdef DEPRECATEDMSG
-	while ((c = getopt(argc, argv, "new")) != -1) {
+	while ((c = getopt(argc, argv, "+new")) != -1) {
 #else
-	while ((c = getopt(argc, argv, "")) != -1) {
+	while ((c = getopt(argc, argv, "+")) != -1) {
 #endif
 		switch (c) {
 #ifdef DEPRECATEDMSG

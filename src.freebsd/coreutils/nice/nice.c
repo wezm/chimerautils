@@ -59,7 +59,7 @@ main(int argc, char *argv[])
 		if (asprintf(&argv[1], "-n%s", argv[1] + 1) < 0)
 			err(1, "asprintf");
 
-	while ((ch = getopt(argc, argv, "n:")) != -1) {
+	while ((ch = getopt(argc, argv, "+n:")) != -1) {
 		switch (ch) {
 		case 'n':
 			errno = 0;

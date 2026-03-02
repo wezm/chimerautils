@@ -76,7 +76,7 @@ main(int argc, char *argv[])
 	 * simplified.
 	 */
 	if (strcmp(getprogname(), "link") == 0) {
-		while (getopt(argc, argv, "") != -1)
+		while (getopt(argc, argv, "+") != -1)
 			link_usage();
 		argc -= optind;
 		argv += optind;
@@ -92,7 +92,7 @@ main(int argc, char *argv[])
 		exit(linkit(argv[0], argv[1], false));
 	}
 
-	while ((ch = getopt(argc, argv, "FLPTfhinst:vwr")) != -1)
+	while ((ch = getopt(argc, argv, "+FLPTfhinst:vwr")) != -1)
 		switch (ch) {
 		case 'F':
 			Fflag = true;

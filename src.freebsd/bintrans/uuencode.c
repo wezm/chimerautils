@@ -95,7 +95,7 @@ main_encode(int argc, char *argv[])
 	if (strcmp(basename(argv[0]), "b64encode") == 0)
 		base64 = 1;
 
-	while ((ch = getopt(argc, argv, "mo:rw:")) != -1) {
+	while ((ch = getopt(argc, argv, "+mo:rw:")) != -1) {
 		switch (ch) {
 		case 'm':
 			base64 = true;

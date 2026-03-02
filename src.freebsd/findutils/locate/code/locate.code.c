@@ -107,7 +107,7 @@ main(int argc, char *argv[])
 	u_int i, j;
 	FILE *fp;
 
-	while ((ch = getopt(argc, argv, "")) != -1)
+	while ((ch = getopt(argc, argv, "+")) != -1)
 		switch(ch) {
 		default:
 			usage();

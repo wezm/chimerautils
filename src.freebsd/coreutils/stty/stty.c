@@ -58,7 +58,7 @@ main(int argc, char *argv[])
 	opterr = 0;
 	while (optind < argc &&
 	    strspn(argv[optind], "-aefg") == strlen(argv[optind]) &&
-	    (ch = getopt(argc, argv, "aef:g")) != -1)
+	    (ch = getopt(argc, argv, "+aef:g")) != -1)
 		switch(ch) {
 		case 'a':		/* undocumented: POSIX compatibility */
 			fmt = POSIX;

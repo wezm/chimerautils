@@ -48,7 +48,7 @@ main(int argc, char *argv[])
 
 	sflag = 0;
 	dflag = 0;
-	while ((ch = getopt(argc, argv, "fsd")) != -1)
+	while ((ch = getopt(argc, argv, "+fsd")) != -1)
 		switch (ch) {
 		case 'f':
 			/*

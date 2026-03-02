@@ -70,7 +70,7 @@ main(int argc, char *argv[])
 	int i;
 
 	ibuf = obuf = ebuf = NULL;
-	while ((i = getopt(argc, argv, "e:i:o:")) != -1) {
+	while ((i = getopt(argc, argv, "+e:i:o:")) != -1) {
 		switch (i) {
 		case 'e':
 			ebuf = optarg;

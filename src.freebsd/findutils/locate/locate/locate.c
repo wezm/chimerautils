@@ -124,7 +124,7 @@ main(int argc, char **argv)
 #endif
 	(void) setlocale(LC_ALL, "");
 
-        while ((ch = getopt(argc, argv, "0Scd:il:ms")) != -1)
+        while ((ch = getopt(argc, argv, "+0Scd:il:ms")) != -1)
                 switch(ch) {
                 case '0':	/* 'find -print0' style */
 			separator = '\0';

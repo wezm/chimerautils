@@ -71,7 +71,7 @@ cumain(int argc, char *argv[])
 		}
 	}
 
-	while ((ch = getopt(argc, argv, "a:l:s:htoe")) != -1) {
+	while ((ch = getopt(argc, argv, "+a:l:s:htoe")) != -1) {
 		switch (ch) {
 		case 'a':
 			CU = optarg;

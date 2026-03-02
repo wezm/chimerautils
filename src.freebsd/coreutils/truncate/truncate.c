@@ -72,7 +72,7 @@ main(int argc, char **argv)
 	do_truncate = 1;
 	error = r = 0;
 	rname = NULL;
-	while ((ch = getopt(argc, argv, "cdr:s:o:l:")) != -1)
+	while ((ch = getopt(argc, argv, "+cdr:s:o:l:")) != -1)
 		switch (ch) {
 		case 'c':
 			no_create = 1;

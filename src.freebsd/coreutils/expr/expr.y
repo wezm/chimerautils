@@ -273,7 +273,7 @@ main(int argc, char *argv[])
 		av = argv + 1;
 		nonposix = 1;
 	} else {
-		while ((c = getopt(argc, argv, "e")) != -1) {
+		while ((c = getopt(argc, argv, "+e")) != -1) {
 			switch (c) {
 			case 'e':
 				nonposix = 1;

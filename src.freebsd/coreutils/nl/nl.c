@@ -135,7 +135,7 @@ main(int argc, char *argv[])
 
 	(void)setlocale(LC_ALL, "");
 
-	while ((c = getopt(argc, argv, "pb:d:f:h:i:l:n:s:v:w:")) != -1) {
+	while ((c = getopt(argc, argv, "+pb:d:f:h:i:l:n:s:v:w:")) != -1) {
 		switch (c) {
 		case 'p':
 			restart = 0;

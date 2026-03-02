@@ -80,7 +80,7 @@ main(int argc, char *argv[])
 	dchar = '\t';			/* default delimiter is \t */
 	strcpy(dcharmb, "\t");
 
-	while ((ch = getopt(argc, argv, "b:c:d:f:snw")) != -1)
+	while ((ch = getopt(argc, argv, "+b:c:d:f:snw")) != -1)
 		switch(ch) {
 		case 'b':
 			get_list(optarg);

@@ -140,7 +140,7 @@ main(int argc, char *argv[])
 	debug = 0;
 	magic = '%';		/* Default magic char is `%'. */
 	nargs = -1;
-	while ((ch = getopt(argc, argv, "a:d0123456789")) != -1)
+	while ((ch = getopt(argc, argv, "+a:d0123456789")) != -1)
 		switch (ch) {
 		case 'a':
 			if (optarg[0] == '\0' || optarg[1] != '\0')
